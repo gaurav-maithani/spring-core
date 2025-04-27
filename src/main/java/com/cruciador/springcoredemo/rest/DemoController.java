@@ -12,7 +12,7 @@ public class DemoController {
 
 
     @Autowired
-    public void setMyCoach(Coach myCoach) {
+    public void setMyCoach(Coach myCoach) { //setter injection
         this.myCoach = myCoach;
     }
 
