@@ -1,4 +1,4 @@
-package com.cruciador.springcoredemo;
+package com.cruciador.springcoredemo.common;
 
 import org.springframework.stereotype.Component;
 
