@@ -3,7 +3,7 @@ package com.cruciador.springcoredemo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
+@SpringBootApplication(scanBasePackages = {"com.cruciador.springcoredemo", "com.cruciador.util"})
 public class SpringcoredemoApplication {
 
 	public static void main(String[] args) {
