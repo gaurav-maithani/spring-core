@@ -1,4 +1,4 @@
-package com.cruciador.springcoredemo.common;
+package com.cruciador.util;
 
 public interface Coach {
     String getDailyWorkout();

@@ -1,6 +1,6 @@
 package com.cruciador.springcoredemo.rest;
 
-import com.cruciador.springcoredemo.common.Coach;
+import com.cruciador.util.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
