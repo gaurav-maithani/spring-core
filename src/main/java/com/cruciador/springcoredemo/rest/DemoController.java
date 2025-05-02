@@ -15,6 +15,8 @@ public class DemoController {
     @Autowired
     public DemoController(Coach myCoach) { //constructor injection
         this.myCoach = myCoach;
+        System.out.println("In constructor :: " + getClass().getSimpleName());
+
     }
 
     @GetMapping("/dailyworkout")
