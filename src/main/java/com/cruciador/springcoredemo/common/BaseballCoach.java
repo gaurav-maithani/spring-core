@@ -3,9 +3,10 @@ package com.cruciador.springcoredemo.common;
 import org.springframework.stereotype.Component;
 
 @Component
-public class CricketCoach implements Coach {
+public class BaseballCoach implements Coach {
+
     @Override
     public String getDailyWorkout() {
-        return "Practise fast bowling for 15 minutes";
+        return "Spend 30 mins in batting practise";
     }
 }

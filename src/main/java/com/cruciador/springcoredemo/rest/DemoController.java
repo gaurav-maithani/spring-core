@@ -2,6 +2,7 @@ package com.cruciador.springcoredemo.rest;
 
 import com.cruciador.springcoredemo.common.Coach;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -12,7 +13,7 @@ public class DemoController {
 
 
     @Autowired
-    public void setMyCoach(Coach myCoach) { //setter injection
+    public DemoController(@Qualifier("cricketCoach") Coach myCoach) { //constructor injection
         this.myCoach = myCoach;
     }
 
@@ -20,6 +21,5 @@ public class DemoController {
     public String getDailyWorkout() {
         return myCoach.getDailyWorkout();
     }
-
 
 }
