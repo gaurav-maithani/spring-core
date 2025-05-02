@@ -13,7 +13,12 @@ public class DemoController {
 
 
     @Autowired
-    public DemoController(Coach myCoach) { //constructor injection
+    public DemoController(@Qualifier("cricketCoach") Coach myCoach,
+                          @Qualifier("cricketCoach") Coach anotherCoach) { //constructor injection
+        //It is important to note that the object or the bean myCoach and anotherCoach are defined by the scope in the CricketCoach class.
+
+        // myCoach == anotherCoach, // true when @Scope(ConfigurableBeanFactory.SCOPE_SINGLETON)
+
         this.myCoach = myCoach;
         System.out.println("In constructor :: " + getClass().getSimpleName());
 
